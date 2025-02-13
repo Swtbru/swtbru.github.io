@@ -81,7 +81,7 @@ body * {
 #theme button {
   width: 32px;
   height: 32px;
-  background: white var(--theme) no-repeat center;
+  background: blue var(--theme) no-repeat center;
   border-radius: 50%;
   border: 0;
   position: absolute;
