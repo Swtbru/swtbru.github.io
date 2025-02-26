@@ -95,8 +95,12 @@ body * {
   animation: slide-in 0.4s forwards;
 }
 
-#theme button:hover {
+.light #theme button:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#theme button:hover{
+   box-shadow: rgba(182, 180, 180, 0.25) 0px 54px 55px, rgba(182, 180, 180, 0.12) 0px -12px 30px, rgba(182, 180, 180, 0.12) 0px 4px 6px, rgba(182, 180, 180, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #theme span {
