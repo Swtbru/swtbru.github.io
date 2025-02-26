@@ -89,10 +89,14 @@ body * {
   left: 0;
   transform: translateY(-50%);
   top: 50%;
+  animation: slide-back 0.4s;
 }
 .light #theme button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
+}
+
+#theme button:hover {
+  outline: 8px solid var(--surface-color-hover);
 }
 
 #theme span {
@@ -159,4 +163,21 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+}
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
