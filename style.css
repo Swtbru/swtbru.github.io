@@ -20,6 +20,10 @@
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --icon-color-hover: rgba(255, 255, 255, 0.2);
   --theme: url(./assets/sun.svg);
+  --box: rgba(182, 180, 180, 0.25) 0px 10px 20px,
+    rgba(182, 180, 180, 0.12) 0px -5px 10px,
+    rgba(182, 180, 180, 0.12) 0px 2px 4px, rgba(182, 180, 180, 0.17) 0px 6px 8px,
+    rgba(0, 0, 0, 0.09) 0px -2px 3px;
 }
 
 .light {
@@ -30,6 +34,9 @@
   --surface-color-hover: rgba(0, 0, 0, 0.3);
   --icon-color-hover: rgba(0, 0, 0, 0.3);
   --theme: url(./assets/moon-stars.svg);
+  --box: rgba(0, 0, 0, 0.25) 0px 10px 20px, rgba(0, 0, 0, 0.12) 0px -5px 10px,
+    rgba(0, 0, 0, 0.12) 0px 2px 4px, rgba(0, 0, 0, 0.17) 0px 6px 8px,
+    rgba(0, 0, 0, 0.09) 0px -2px 3px;
 }
 
 body {
@@ -96,13 +103,13 @@ body * {
 }
 
 .light #theme button:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transition: 0,4s;
+  box-shadow: var(--box);
+  transition: 0.4s;
 }
 
-#theme button:hover{
-   box-shadow: rgba(182, 180, 180, 0.25) 0px 54px 55px, rgba(182, 180, 180, 0.12) 0px -12px 30px, rgba(182, 180, 180, 0.12) 0px 4px 6px, rgba(182, 180, 180, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-   transition: 0.4s;
+#theme button:hover {
+  box-shadow: var(--box);
+  transition: 0.4s;
 }
 
 #theme span {
